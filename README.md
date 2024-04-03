@@ -49,6 +49,8 @@
 * **CustomerID** — идентификатор клиента (уникальный пятизначный номер, однозначно присваиваемый каждому клиенту);
 * **Country** — название страны, в которой проживает клиент.
 
+[Скачать данные](https://lms-cdn.skillfactory.ru/assets/courseware/v1/468638e49cb9e7d4b4dfdc296c1c778e/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/pj6_data.zip)
+
 :arrow_up:[к оглавлению](#Оглавление)
 
 
