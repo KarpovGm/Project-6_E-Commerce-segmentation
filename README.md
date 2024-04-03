@@ -7,7 +7,7 @@
 [4. Описание данных](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-данных)  
 [5. Этапы решения](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Этапы-решения)
 [6. Использованные инструменты](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Использованные-инструменты) 
-[7. Результат](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Результат) 
+[7. Результат](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Результаты) 
 [8. Выводы](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Выводы) 
 
 ### Описание проекта    
@@ -84,7 +84,7 @@
 :arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
 
-### Выводы:  
+### Выводы 
 
 Проект получился достойным как по мне, сегментация прошла довольно успешно, кластеры интерпретируемы и различимы между собой. Конечно, работу можно, и нужно будет продолжить, дабы вытянуть из данных максимум и обеспечить бизнес еще большем количеством информации для внедрения маркетинговой компании. Например, можно совершить еще следующие шаги:
 
