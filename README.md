@@ -1,99 +1,79 @@
+# Сегментация клиентов онлайн-магазина подарков
 
-<a name="readme-top"></a>
+## Оглавление  
+[1. Описание проекта](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-проекта)  
+[2. Задача](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Задача)  
+[3. Цели проекта](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Цели-проекта)  
+[4. Описание данных](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-данных)  
+[5. Этапы решения](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Этапы-решения)    
+[6. Результат](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Результат) 
+[7. Выводы](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Выводы) 
 
+### Описание проекта    
 
+Маркетинг — неотъемлемая часть любого бизнеса. Для повышения прибыли компании важно понимать своего клиента, его пожелания и предпочтения. Машинное обучение помогает анализировать огромное количество данных о посетителях платформы, узнавать модели поведения клиентов и определять категории клиентов. В рамках данного проекта мы провели сегментацию клиентов онлайн-магазина подарков на основе их покупательского поведения.
 
-<br />
-<div align="center">
-  <a href="https://github.com/KarpovGm/Project-6_E-Commerce-segmentation">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Сегментация клиентов онлайн-магазина подарков</h3>
-
-  <p align="center">
-    Маркетинг — неотъемлемая часть любого бизнеса. Для повышения прибыли компании важно понимать своего клиента, его пожелания и предпочтения. Машинное обучение помогает поисковой системе анализировать огромное количество данных о посетителях платформы, узнавать модели поведения профессиональных покупателей, определять категорию клиентов (например, лояльные/перспективные/новички/«спящие»/ушедшие) и выбирать правильную стратегию взаимодействия с ними.
-    <br />
-  </p>
-</div>
+:arrow_up:[к оглавлению](_)
 
 
+### Задача  
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Оглавление</summary>
-  <ol>
-    <li>
-      <a href="#Описание-проекта">Описание проекта</a>
-    <li>
-      <a href="#Данные">Данные</a>
-      <ul>
-        <li><a href="#Этапы-работы-над-проектом">Этапы работы над проектом</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+**Бизнес-задача**
+Цель проекта заключалась в сегментации существующих клиентов и определении стратегии взаимодействия с ними для повышения эффективности маркетинговых кампаний.
+
+**Техническая задача**
+Для решения бизнес-задачи были использованы методы машинного обучения. Основные этапы работы включали в себя предобработку данных, анализ основных характеристик, создание новых признаков, сегментацию клиентов и визуализацию результатов.
 
 
 
-<!-- ABOUT THE PROJECT -->
-## Описание проекта
+### Цели проекта
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Маркетинг — неотъемлемая часть любого бизнеса. Для повышения прибыли компании важно понимать своего клиента, его пожелания и предпочтения. Машинное обучение помогает поисковой системе анализировать огромное количество данных о посетителях платформы, узнавать модели поведения профессиональных покупателей, определять категорию клиентов (например, лояльные/перспективные/новички/«спящие»/ушедшие) и выбирать правильную стратегию взаимодействия с ними.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Данные
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Этапы работы над проектом
+1. Провести предобработку и разведывательный анализ данных.
+2. Построить модели кластеризации и определить оптимальное количество кластеров.
+3. Проинтерпретировать полученные кластеры и определить стратегии взаимодействия с каждой группой клиентов.
+  
+:arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
 
+### Описание Данных  
+
+Датасет содержит все транзакции, произошедшие за период с 01/12/2010 по 09/12/2011, для компании, занимающейся розничной онлайн-торговлей подарками. Данные представлены в виде следующих признаков:
+
+* **InvoiceNo** — номер счёта-фактуры (уникальный номинальный шестизначный номер, присваиваемый каждой транзакции; буква 'C' в начале кода указывает на отмену транзакции);
+* **StockCode** — код товара (уникальное пятизначное целое число, присваиваемое каждому отдельному товару);
+* **Description** — название товара;
+* **Quantity** — количество каждого товара за транзакцию;
+* **InvoiceDate** — дата и время выставления счёта/проведения транзакции;
+* **UnitPrice** — цена за единицу товара в фунтах стерлингов;
+* **CustomerID** — идентификатор клиента (уникальный пятизначный номер, однозначно присваиваемый каждому клиенту);
+* **Country** — название страны, в которой проживает клиент.
+
+:arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
 
-## Usage
+### Этапы решения  
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Знакомство со структурой
+2.1. Преобразование, очистка и анализ данных
+2.2. Проектирование признаков
+2.3. Разведывательный анализ данных о транзакциях
+2.4. Построение RFM-таблицы и поиск RFM-выбросов
+3. Моделирование и оценка качества моделей
+3.1. Кластеризация на основе RFM-характеристик
+3.2. Интерпретация кластеров
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+:arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Результат
+На основании RFM-анализа я понизил размерность данных для более наглядной визуализации и удобства в сегментировании, нашел оптимальное количество кластеров методом силуэта, и использовал алгоритм KMeans для сегментации клиентов на основе их лояльности. Чтобы сегменты были более понятно различимы, я построил профиль кластеров с помощью Radar Chart, где уже наглядно были видно следующие сегменты: **лояльные**, **перспективные**, **дрейфующие**, **новички**, **в зоне риска** и **спящие/ушедшие**.
 
-
-## Результаты
-
-
+:arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Выводы:  
 
+Первый настоящий Data-Science проект завершен, я сталкивался, конечно, с немалым количеством трудностей, но смог решить все поставленные задачи. Я углубился в тему и чувствую, что хорошо усвоил материал, пройденный на курсе до проекта.
 
+:arrow_up:[к оглавлению](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Оглавление)
 
-
-## Выводы
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
