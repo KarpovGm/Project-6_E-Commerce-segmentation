@@ -1,7 +1,7 @@
 # Сегментация клиентов онлайн-магазина подарков
 
 ## Оглавление  
-[1. Описание проекта](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-проекта)  
+[1. Описание проекта](#Описание-проекта)  
 [2. Задача](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Задача)  
 [3. Цели проекта](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Цели-проекта)  
 [4. Описание данных](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-данных)  
