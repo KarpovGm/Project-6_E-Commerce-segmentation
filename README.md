@@ -5,9 +5,10 @@
 [2. Задача](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Задача)  
 [3. Цели проекта](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Цели-проекта)  
 [4. Описание данных](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Описание-данных)  
-[5. Этапы решения](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Этапы-решения)    
-[6. Результат](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Результат) 
-[7. Выводы](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Выводы) 
+[5. Этапы решения](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Этапы-решения)
+[6. Использованные инструменты](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Использованные-инструменты) 
+[7. Результат](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Результат) 
+[8. Выводы](https://github.com/KarpovGm/Project-6_E-Commerce-segmentation/README.md#Выводы) 
 
 ### Описание проекта    
 
